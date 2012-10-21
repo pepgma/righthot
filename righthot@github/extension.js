@@ -25,9 +25,9 @@ function init() {
 }
 
 function enable() {
-    Main.panel._rightBox.insert_actor(button, Main.panel._rightBox.get_children().length);
+    Main.panel._rightBox.insert_child_at_index(button, Main.panel._rightBox.get_children().length);
 }
 
 function disable() {
-    Main.panel._rightBox.remove_actor(button);
+    Main.panel._rightBox.remove_child(button);
 }
